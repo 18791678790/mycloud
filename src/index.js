@@ -5,18 +5,24 @@ import { Icon } from '@iconify/vue2';
 import Drawer from './components/Drawer';
 import App from './App.vue';
 import router from './router';
+// import Dialog from './components/Dialog';
+import Switch from './components/Switch';
 // eslint-disable-next-line vue/multi-word-component-names
 Vue.component('Icon', Icon);
 Vue.use(Drawer);
+// Vue.use(Dialog);
+Vue.use(Switch);
 
-// Vue.component('Drawer', Drawer);
 
-const vm = new Vue({
-  el: '#app', // 挂载节点
+const app = new Vue({
+  el: '#app',
   router,
   components: { App },
-  template: '<App />',
+  template: '<App/>',
 });
+
+// wiondow.app = app;
+// console.log(app);
 
 /*class V {
   static component(name, comp) {

@@ -121,3 +121,5 @@ export async function fetchPlaylist() {
   );
   return playlist.map((item) => item.data.playlist);
 }
+
+export const getQRkey = () => http

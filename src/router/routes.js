@@ -3,11 +3,10 @@ import SearchView from '../views/SearchView/SearchView.vue';
 import Singer from '../views/SearchView/Singer.vue';
 import Genre from '../views/SearchView/Genre.vue';
 import Zone from '../views/SearchView/Zone.vue';
-
 export default [
   {
     path: '/',
-    redirect: '/HomeView',
+    redirect: '/Foo',
   },
   {
     path: '/HomeView',
@@ -28,5 +27,10 @@ export default [
   {
     path: '/Zone',
     component: Zone,
+  },
+  {
+    path: '/Foo',
+    // 懒加载组件文件
+    component: () => import('../views/Foo.vue'),
   },
 ];

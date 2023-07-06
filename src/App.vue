@@ -1,27 +1,24 @@
 <template>
-  <div>
+  <div class="w-screen h-screen">
     <!-- 声明式导航 -->
-    <!-- <router-link to="/></router-link> -->
-    <!-- <router-link :to="{ path: '/IndexView', query: { id: 123 } }"
-      >go tu IndexView</router-link
-    > -->
-    <router-view> </router-view>
+    <!-- <router-link :to="{ path: '/IndexView/123' }">go to index</router-link> -->
+    <router-view />
   </div>
 </template>
-
 <script>
 export default {
-  components: {},
-  data() {
-    return {};
+  created() {
+    // setTimeout(() => {
+    //   // 编程式导航
+    //   this.$router.push('/IndexView');
+    // }, 10000);
   },
-  create() {},
-  methods: {},
 };
 </script>
-
 <style>
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 </style>
+
+

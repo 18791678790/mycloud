@@ -1,6 +1,6 @@
 // 1、引入
 import VueRouter from 'vue-router';
-import routes from './routes.js';
+import routes from './routes';
 // 2、注册全局
 import Vue from 'vue';
 Vue.use(VueRouter);
