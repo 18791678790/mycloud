@@ -9,7 +9,7 @@
       class="dark:bg-gradient-to-r dark:from-[rgb(28,25,52)] dark:to-[rgb(27,27,35)] bg-[#F4F4F4]"
     >
       <div
-        class="bg-gradient-to-b from-[#E6E6FB] to-[#f1f1f1] opacity-0.2 dark:bg-gradient-to-r dark:from-[rgb(28,25,52)] dark:to-[rgb(27,27,35)]"
+        class=" bg-slate-100 to-[#f1f1f1] opacity-0.2 dark:bg-gradient-to-r dark:from-[rgb(28,25,52)] dark:to-[rgb(27,27,35)]"
       >
         <div
           class="w-[100vw] h-[20vw] p-[3vw] flex justify-between items-center"
@@ -29,7 +29,7 @@
                 :placeholder="defaultSearch.showKeyword"
                 v-model="userSearchKeywords"
                 @focus="search"
-                class="dark:bg-gradient-to-r dark:from-[rgb(28,25,52)] dark:to-[rgb(27,27,35)] dark:border-2 dark:border-[rgb(49,45,78)] text-[3vw] pl-[8vw] bg-gradient-to-r from-[#d9ddfd] to-[#f3d9ef] opacity-0.2 text-[#8189A1] w-[75vw] h-[10vw] border-2 border-[#CCCEF7] rounded-[25px]"
+                class="dark:bg-gradient-to-r dark:from-[rgb(28,25,52)] dark:to-[rgb(27,27,35)] dark:border-2 dark:border-[rgb(49,45,78)] text-[3vw] pl-[8vw] bg-slate-200 opacity-0.2 text-[#8189A1] w-[75vw] h-[10vw] border-2 border-gray-300 rounded-[25px]"
               />
             </label>
             <Icon
@@ -149,7 +149,7 @@
             v-for="item in hot"
             :key="item.id"
             :item="item"
-            class="scroll-item py-[4vw] px-[3vw] w-[65vw] mr-[2.8vw] mt-[3vw] mb-[5vw] bg-slate-500 h-[30vw] rounded-[10px]"
+            class="scroll-item py-[4vw] px-[3vw] w-[65vw] mr-[2.8vw] mt-[3vw] mb-[5vw] bg-gray-400 h-[30vw] rounded-[10px]"
           ></HotTopic>
         </template>
       </Panel>
@@ -529,7 +529,6 @@ export default {
     },
 
     remove() {
-      // console.log(66);
       Dialog({ message: '确定退出当前账号吗？' })
         .then(() => {
           console.log('点击了确定');

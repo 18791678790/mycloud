@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="" :style="{ background: color }">
     <div ref="top">
       <!--  头部 -->
@@ -571,4 +571,4 @@ export default {
   transform: translateY(-100%);
   opacity: 0;
 }
-</style>
+</style> -->
